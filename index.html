@@ -1,26 +1,45 @@
 <html>
     <head>
         <title></title>
+        <img src="./logo.png">
         <link rel="stylesheet" href="./style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
     
     <body>
         Controle financeiro
-        <form>
-            <label for="tipo">Tipo de transição</label>
-            <select id="tipo" class="tipo">
-                <option value="Compra">Compra</option>
-                <option value="Venda">Venda</option>
-            </select>
+        <div>
+            <form>
+                <label for="tipo">Tipo de transição</label>
+                <select id="tipo" class="tipo">
+                    <option value="Compra">Compra</option>
+                    <option value="Venda">Venda</option>
+                </select>    
+        
 
-            <label for="nome">Nome da mercadoria</label>
-            <input id="nome" class="nome" type="text" placeholder="Input">
+                <label for="nome">Nome da mercadoria</label>
+                <input id="nome" class="nome" type="text" placeholder="Input">
+                
+                <label for="valor">Valor</label>
+                <input id="valor" class="valor" placeholder="R$0,00" type="number">
+                
+                <input type="submit" value="Adicionar transação">
+            </form>
+        </div>
+        
 
-            <label for="valor">Valor</label>
-            <input id="valor" class="valor" placeholder="R$0,00" type="number">
-
-            <input type="submit" value="Adicionar transação">
-        </form>
+        <div>
+            <h1>Extrato de transações</h1>
+            <table>
+                <tr>
+                    <th>Mercadoria</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Nenhuma transação cadastrada</td>
+                </tr>
+            </table>
+        </div>
 
     </body>
 </html>
