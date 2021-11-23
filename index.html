@@ -1,41 +1,63 @@
 <html>
     <head>
         <title></title>
-        <img src="./logo.png">
         <link rel="stylesheet" href="./style.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
     
     <body>
-        Controle financeiro
-        <div>
-            <form>
-                <label for="tipo">Tipo de transição</label>
-                <select id="tipo" class="tipo">
-                    <option value="Compra">Compra</option>
-                    <option value="Venda">Venda</option>
-                </select>    
+        <header>
+            <img class="icon" src="./icon.png">
+            <div class="title">Controle financeiro</div>
+            <img class="menuicon" src="./menuicon.png">
+        </header>
         
 
-                <label for="nome">Nome da mercadoria</label>
-                <input id="nome" class="nome" type="text" placeholder="Input">
-                
-                <label for="valor">Valor</label>
-                <input id="valor" class="valor" placeholder="R$0,00" type="number">
-                
-                <input type="submit" value="Adicionar transação">
+        <div class="container-form">
+            <form>
+                <div>
+                    <label for="tipo">Tipo de transição</label>
+                </div>
+                <div>
+                    <select id="tipo" class="tipo" required>
+                        <option value="Compra">Compra</option>
+                        <option value="Venda">Venda</option>
+                    </select>    
+                </div>
+
+
+                <div>
+                    <label for="nome">Nome da mercadoria</label>
+                </div>
+                <div>
+                    <input id="nome" class="nome" type="text" placeholder="Input" required>
+                </div>
+
+
+                <div>
+                    <label for="valor">Valor</label>
+                </div>
+                <div>
+                    <input id="valor" class="valor" placeholder="R$0,00" type="number" required>
+                </div>
+
+                <div>
+                    <input type="submit" class="button" value="Adicionar transação">
+                </div>
             </form>
         </div>
         
+        <hr>
 
-        <div>
-            <h1>Extrato de transações</h1>
-            <table>
-                <tr>
+        <div class="extrato">
+            <h2>Extrato de transações</h2>
+            <table class="tabela">
+                <tr class="tr1">
                     <th>Mercadoria</th>
                     <th>Valor</th>
                 </tr>
-                <tr>
+            
+                <tr class="tr2">
                     <td colspan="2">Nenhuma transação cadastrada</td>
                 </tr>
             </table>
