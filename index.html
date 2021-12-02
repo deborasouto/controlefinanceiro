@@ -18,97 +18,97 @@
                 <img class="menuicon" src="./menuicon.png">
                 
                 <div class="menuaberto">
-                    <div class="menuoptions">
                         <div class="opt1">
                             Cadastro de transações
                         </div>
                         <div class="opt2">
                             Limpar dados
                         </div>
-                    </div>
                 </div>
             </div>
         </header>
         
 
 
+        <div class="corpo">
 
-        <div class="container-form">
-            <form>
-                <div class="tablet">
-                    <div>
-                        <div>
-                            <label for="tipo">Tipo de transação</label>
-                        </div>
-                        <div>
-                            <select id="tipo" class="tipo" required>
-                                <option value="Compra">Compra</option>
+            <div class="container-form">
+                <form>
+                    <div class="formcampos">
+                        <div class="campoform">
+                            <div>
+                                <label for="tipo">Tipo de transação</label>
+                            </div>
+                            <div>
+                                <select id="tipo" class="tipo" required>
+                                    <option value="Compra">Compra</option>
                                 <option value="Venda">Venda</option>
-                            </select>    
+                                </select>    
+                            </div>
+                        </div>
+                        
+                        <div class="campoform2">
+                            <div>
+                                <label for="nome">Nome da mercadoria</label>
+                            </div>
+                            <div>
+                                <input id="nome" class="nome" type="text" placeholder="Input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="campoform">
+                            <div>
+                                <label for="valor">Valor</label>
+                            </div>
+                            <div>
+                                <input id="valor" class="valor" placeholder="R$0,00" type="number" required>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div>
-                        <div>
-                            <label for="nome">Nome da mercadoria</label>
-                        </div>
-                        <div>
-                            <input id="nome" class="nome" type="text" placeholder="Input" required>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <label for="valor">Valor</label>
-                        </div>
-                        <div>
-                            <input id="valor" class="valor" placeholder="R$0,00" type="number" required>
-                        </div>
-                    </div>
-                </div>
-                    <div>
+                    <div class="tabletbutton">
                         <div>
                             <input type="submit" class="button" value="Adicionar transação">
                         </div>
                     </div>
                 </form>
             </div>
+        
+            <hr>
+        
+            <div class="extrato">
+                <h2>Extrato de transações</h2>
+                <table class="tabela">
+                    <tr class="th">
+                        <th> </th>
+                        <th class="th1">Mercadoria</th>
+                        <th class="th2">Valor</th>
+                    </tr>
             
-        <hr>
-
-        <div class="extrato">
-            <h2>Extrato de transações</h2>
-            <table class="tabela">
-                <tr class="th">
-                    <th> </th>
-                    <th class="th1">Mercadoria</th>
-                    <th class="th2">Valor</th>
-                </tr>
-            
-                <tr class="tr1">
-                    <td style="display: contents;">+</td>
-                    <td class="td2">Lorem ipsum dolor sit amet, consectetur</td>
-                    <td style="display: flex; flex-direction: row-reverse;">R$12.999,99</td>
-                </tr>
-                <tr class="tr1">
-                    <td class="td1">-</td>
-                    <td class="td2">Quis nostrud exercitation</td>
-                    <td style="text-align: end;">R$99,99</td>
-                </tr>
-                <tr class="tr1">
-                    <td class="td1">+</td>
-                    <td class="td2">Lorem ipsum</td>
-                    <td style="text-align: end;">9,99</td>
-                </tr>
-                <tr class="tr1">
-                    <th> </th>
-                    <th class="th1">Total</th>
-                    <th style="text-align: end;">12.909,99</th>
-                </tr>
-            </table>
+                    <tr class="tr1">
+                        <td style="display: contents;">+</td>
+                        <td class="td2">Lorem ipsum dolor sit amet, consectetur</td>
+                        <td style="display: flex; flex-direction: row-reverse;">R$12.999,99</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">-</td>
+                        <td class="td2">Quis nostrud exercitation</td>
+                        <td style="text-align: end;">R$99,99</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">+</td>
+                        <td class="td2">Lorem ipsum</td>
+                        <td style="text-align: end;">9,99</td>
+                    </tr>
+                    <tr class="tr1">
+                        <th> </th>
+                        <th class="th1">Total</th>
+                        <th style="text-align: end;">12.909,99</th>
+                    </tr>
+                </table>
+            </div>
         </div>
         <footer>
-
+            
         </footer>
     </body>
 </html>

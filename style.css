@@ -32,6 +32,9 @@ header {
     width: 50px;
 }
 
+
+/* menu*/
+
 .menuicon {
     width: 50px;
 }
@@ -41,35 +44,27 @@ header {
 }
 
 .menu:hover .menuaberto {
-    display: block;
-    background-color: black;
-    color: white;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    padding-right: 50px;
-    font-size: 23px;
-    margin-left: -250;
-    width: 270;
-    padding-top: 60px;
-}
-
-.menu:hover .menuaberto .menuoptions {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    line-height: 50px;
+    position: fixed;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    top: 0;
+    right: 0;
+    width: 66vw;
+    height: 100%;
 }
 
-.opt1:hover {
-    background-color: gray;
-    color: black;
+.menuaberto div {
+    width: 100%;
+    padding: 20px;
 }
 
-.opt2:hover {
-    background-color: gray;
-    color: black;
+.menuaberto div:hover {
+    background-color: white;
+    color: rgb(66, 66, 66);
 }
+
 
 /*form*/
 
@@ -119,8 +114,8 @@ hr {
     background-color: black;
     height: 1px;
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     margin-left: 10;
 } 
 
@@ -162,3 +157,206 @@ footer {
 }
 
 
+@media only screen and (min-width: 768px) {
+    .corpo {
+        
+    }
+    
+    .tabletform {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .tabletform div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    
+    form {
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 10px;
+    }
+    
+    form div {
+        display: contents;
+    }
+
+    .button {
+        width: 33vw;
+        padding: 10px;
+    }
+    
+    .tabletbutton {
+        display: flex;
+        place-content: flex-end
+    }
+
+    hr {
+        display: none;
+    }
+
+
+    .th1 {
+        display: flex;
+    }
+    
+    
+    .campoform {
+        width: 600;
+        align-items: center;
+    }
+    .campoform2 {
+        align-items: center;
+    }
+
+    .menu:hover .menuaberto {
+        width: 33vw;
+    }
+    
+}
+
+@media only screen and (min-width: 1112px) {
+    
+    /* menu */
+    
+    .menuicon {
+        display: none;
+    }
+    
+    .menuaberto {
+        display: flex;
+        flex-direction: row;
+        background-color: #FFFFFF;
+    }
+    
+    .menu .menuaberto {
+        pointer-events: none
+        
+    }
+    
+    
+    .menuaberto div {
+        pointer-events: none
+        
+    }
+    
+    .opt1, .opt2 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+    
+    
+    /*form*/
+    
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        padding: 10px;
+        margin: auto;
+    }
+
+    label {
+        
+        
+    }
+    
+    form div {
+        font-size: 20px;
+        margin: 5px;
+        width: -webkit-fill-available;
+    }
+    
+    
+    input, select {
+        color: gray;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px;
+    }
+
+
+    .button {
+        color: white;
+        background-color: rgb(66, 66, 66);
+        border: transparent;
+        margin-top: 15px;
+    }
+
+    hr {
+        background-color: black;
+        height: 1px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10;
+    } 
+
+    .formcampos {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /*extracto*/
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .extrato {
+        font-size: 20px;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .tabela {
+        font-size: 20px;
+        
+    }
+
+    .corpo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    .extrato {
+        width: 652px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .corpo {
+        width: 70%;
+        padding-left: 15%;
+    }
+
+}
