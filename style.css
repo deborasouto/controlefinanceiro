@@ -261,7 +261,7 @@ footer {
         width: auto;
         justify-content: center;
         padding: 10px;
-        margin: auto;
+        margin: inherit;
     }
 
     label {
@@ -285,8 +285,8 @@ footer {
         background: #FFFFFF;
         border: 1px solid #979797;
         box-sizing: border-box;
-    border-radius: 4px;
-    padding: 10px;
+        border-radius: 4px;
+        padding: 10px;
     }
 
 
@@ -335,6 +335,7 @@ footer {
     .corpo {
         display: flex;
         flex-direction: row;
+        justify-content: space-around
     }
 
     form {
