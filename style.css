@@ -32,38 +32,17 @@ header {
     width: 50px;
 }
 
-
-/* menu*/
-
-.menuicon {
-    width: 50px;
+.icontitulo {
+    display: contents;
 }
 
-.menuaberto {
-    display: none;
-}
-
-.menu:hover .menuaberto {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    background-color: rgb(66, 66, 66);
-    color: white;
-    top: 0;
-    right: 0;
-    width: 66vw;
-    height: 100%;
-}
+/*menu*/
 
 .menuaberto div {
     width: 100%;
     padding: 20px;
 }
 
-.menuaberto div:hover {
-    background-color: white;
-    color: rgb(66, 66, 66);
-}
 
 
 /*form*/
@@ -75,6 +54,11 @@ header {
     justify-content: center;
     padding: 10px;
     margin: auto;
+}
+
+.tituloform {
+    display: none;
+
 }
 
 label {
@@ -147,6 +131,12 @@ h2 {
     flex-direction: row-reverse;
 }
 
+td {
+    border-top: 1px solid black;
+    
+  }
+
+
 footer {
     background-color: black;
     height: 20px;
@@ -158,23 +148,25 @@ footer {
 
 
 @media only screen and (min-width: 768px) {
-    .corpo {
-        
-    }
     
-    .tabletform {
+    .tituloform {
+        display: block;
+        text-align: center;
+        font-weight: 900;
+        font-size: 24px;
+    
+    }
+
+    .formcampos {
         display: flex;
         flex-direction: row;
         
     }
     
-    .tabletform div {
+    .formcampos div {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;    
     }
-    
-    
-    
     
     form {
         border: 1px solid black;
@@ -207,7 +199,7 @@ footer {
     
     
     .campoform {
-        width: 600;
+        width: 600px;
         align-items: center;
     }
     .campoform2 {
@@ -223,25 +215,42 @@ footer {
 @media only screen and (min-width: 1112px) {
     
     /* menu */
+
+    .title {
+        padding-left: 20px;
+
+    }
+
+    .icontitulo {
+        display: inline-flex;
+    }
     
     .menuicon {
         display: none;
+    }
+    
+    .menu:hover .menuaberto {
+        pointer-events: none;
     }
     
     .menuaberto {
         display: flex;
         flex-direction: row;
         background-color: #FFFFFF;
+        align-items: center;
+        text-align: center;
+        white-space: nowrap;
     }
     
+    
     .menu .menuaberto {
-        pointer-events: none
-        
+        pointer-events: none;
+    
     }
     
     
     .menuaberto div {
-        pointer-events: none
+        pointer-events: none;
         
     }
     
@@ -250,6 +259,10 @@ footer {
         display: flex;
         align-items: center;
         font-size: 18px;
+    }
+    
+    .barramenu {
+        display: block;
     }
     
     
@@ -289,6 +302,9 @@ footer {
         padding: 10px;
     }
 
+    .campoform {
+        width: auto;
+    }
 
     .button {
         color: white;
@@ -348,7 +364,7 @@ footer {
 }
 
 @media only screen and (min-width: 1500px) {
-
+   
     header {
         display: flex;
         flex-direction: row;
@@ -360,4 +376,42 @@ footer {
         padding-left: 15%;
     }
 
+}
+
+@media only screen and (max-width: 1112px) {
+        /* menu hover */
+
+    .menuicon {
+        width: 50px;
+    }
+
+    .menuaberto {
+        display: none;
+    }
+
+    .menu:hover .menuaberto {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgb(66, 66, 66);
+        color: white;
+        top: 0;
+        right: 0;
+        width: 66vw;
+        height: 100%;
+    }
+
+    .menuaberto div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menuaberto div:hover {
+        background-color: white;
+        color: rgb(66, 66, 66);
+    }
+
+    .barramenu {
+        display: none;
+    }
 }
